@@ -27,10 +27,10 @@ for excelName in excelNames:
     for eleTable in eleTables: #Loops through every instance of the element table and strips the area we are looking for
         valuationType = eleTable.h2.text.strip() #Specific location of the data we want to extra stripped downed and formatted
         df = pd.read_html(str(eleTable))[0] #Insert tables using the Pandas import by reading the html and converting the element to a string. 
-        profileInfo[valuationType] = df #Passing information using the title to profileInfo
+        profileInfo[valuationType] = df #Passing information using the title to profileInf
 
     """
-    Export data to Excel spreadsheets
+    Export data to Excel spreadsheets properly formatted
     """
     ws = wb.Worksheets.Add()
     ws.name = excelName
