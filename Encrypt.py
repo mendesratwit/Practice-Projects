@@ -79,5 +79,4 @@ while choice != "quit" or "end" or "end" or "close":
 ##Reading and printing the file byte by byte and storing it into data file
 ##Retrieves each index value and changes it using the exclusive or on the key used changing the array to the encrypted version
 ##Print(f"index: {index} value: {value}") Print the Index and the value of the index       
-##Enumerate gives back index value and  the position
 ##Reading the file and writing the contents byte by byte into new file with CC appended as an indicator for the copied version
