@@ -23,7 +23,7 @@ class Server():
     def check_connection(self):
         #Used to print out connection attempt results
         msg = ""
-        #We will be assuming all the connections are false 
+        #We will be assuming all the connections are false initally until tested
         success = False
         #Current time
         now = datetime.now()
