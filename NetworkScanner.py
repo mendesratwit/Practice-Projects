@@ -69,7 +69,8 @@ class Server():
             self.history.pop(0)
 
              
-
+    #Running unique command dependant on operating systems 
+    #Get result (output) from pinging server returning true or false passing in self.name
     def ping(self):
         try:
             output = subprocess.check_output("ping -{} 1 {}".format('n' if platform.system().lower(
